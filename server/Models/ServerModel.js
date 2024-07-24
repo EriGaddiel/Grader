@@ -3,6 +3,9 @@ import mongoose from "mongoose"
 import cors from 'cors'
 import dotenv from "dotenv"
 
+// Routes
+import authRoutes from '../Routes/auth.route.js'
+
 dotenv.config()
 
 
@@ -34,7 +37,7 @@ class Server{
     }
 
     routes(){
-
+        this.app.use('/api/auth', authRoutes)
     }
 
     start(){
