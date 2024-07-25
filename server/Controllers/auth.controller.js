@@ -10,9 +10,9 @@ export const signup = async (req, res, next) => {
        next(errorHandler(400, "All fields are required"))
     }
  
-    if (username.length < 3) next(errorHandler(400, "Username is at least 3 characters"))
+    // if (username.length < 3) next(errorHandler(400, "Username is at least 3 characters"))
     
-    else if (password.length < 6) next(errorHandler(400, "Password most be at least 6 characters"))
+    // else if (password.length < 6) next(errorHandler(400, "Password most be at least 6 characters"))
 
 
     const hashedPassword = bcryptjs.hashSync(password, 10)
@@ -28,7 +28,7 @@ export const signup = async (req, res, next) => {
         await newUser.save()
         res.json({message : "Sign In sucessfully"})        
     } catch (error) {
-        next(errorHandler(400, error.message))
+        next(errorHandler(500, error.message))
     }
 
 }
