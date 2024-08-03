@@ -19,7 +19,6 @@ class Server{
 
         this.middleware()
 
-        this.routes()
     }
 
     async connectDatabase() {
@@ -34,6 +33,8 @@ class Server{
         this.app.use(cors())
         this.app.use(express.json())
         this.app.use(urlencoded({ extended: true}))
+
+        this.routes()
 
         this.app.use((err, req, res, next) => {
             const statusCode = err.statusCode || 500
