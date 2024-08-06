@@ -71,6 +71,8 @@ export const login = async (req, res, next) =>{
 
         const {password: pass, ...rest} = validUser._doc
 
+
+        //  Access Token
         res.status(200).cookie('Access_token', token, {httpOnly: true}).json(rest)
 
     } catch (error) {
