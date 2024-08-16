@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './Pages/Home'
 import SignUp from './Pages/SignUp'
 import Login from './Pages/Login'
-import Navbar from './Components/Navbar'
+import NavBar from './Components/Navbar'
 
 function App() {
 
@@ -20,7 +20,7 @@ const Main = () => {
   const showNavbar = !['/login', '/sign-up'].includes(path.pathname)
   return (
     <>
-      {showNavbar && <Navbar />}
+      {showNavbar && <NavBar />}
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/sign-up" element={<SignUp/>} />

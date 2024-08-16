@@ -29,7 +29,6 @@ function Login() {
       setErrorMessage(null)
 
       const res = await axios.post('http://localhost:5000/api/auth/login', formData) 
-      console.log(res)
 
       if (res.status === 200) {
         setLoading(false)
