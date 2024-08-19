@@ -33,9 +33,10 @@ function NavBar() {
       </Navbar.Brand>
 
       {/* Search Bar */}
-      <TextInput type='text' placeholder='Search ...'  rightIcon={AiOutlineSearch} sizing='sm'/>
+      <TextInput type='text' placeholder='Search ...' className='hidden md:inline'  rightIcon={AiOutlineSearch} sizing='sm'/>
 
-      <div className='relative flex items-center gap-2 md:order-2'>
+      <div className='relative flex items-center gap-2 sm:gap-4 md:order-2'>
+          <AiOutlineSearch className='text-gray-500 cursor-pointer inline sm:hidden'/>
           <div className="relative">
               <FiBell />
               <span className="absolute top-0 right-0 block w-2 h-2 bg-red-500 rounded-full ring-2 ring-white" />
