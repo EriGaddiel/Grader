@@ -8,10 +8,10 @@ import ActivityCard from '../Components/ActivityCard'
 
 function Home() {
   return (
-    <div className='flex justify-between p-2 gap-5'>
+    <div className='flex justify-between p-1 md:p-2 gap-5'>
       
       {/* User profile and  pin section */}
-      <div className='w-1/2 md:inline hidden'>
+      <div className='w-1/4 xl:w-1/2 md:inline hidden'>
         <ProfileCard/>
         <ShortcutCard/>
       </div>
@@ -20,7 +20,7 @@ function Home() {
       <PostSection/>
 
       {/* Notification, other elements */}
-      <div className='w-1/2 md:inline hidden'>
+      <div className='w-1/4 xl:w-1/2 md:inline hidden'>
         <ActivityCard />
       </div> 
 

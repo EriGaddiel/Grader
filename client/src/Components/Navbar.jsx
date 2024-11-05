@@ -36,7 +36,7 @@ function NavBar() {
       <TextInput type='text' placeholder='Search ...' className='hidden md:inline'  rightIcon={AiOutlineSearch} sizing='sm'/>
 
       <div className='relative flex items-center gap-2 sm:gap-4 md:order-2'>
-          <AiOutlineSearch className='text-gray-500 cursor-pointer hidden sm: inline'/>
+          <AiOutlineSearch className='text-gray-500 cursor-pointer inline md:hidden'/>
           <div className="relative">
               <FiBell />
               <span className="absolute top-0 right-0 block w-2 h-2 bg-red-500 rounded-full ring-2 ring-white" />
