@@ -70,20 +70,21 @@ function PostCards() {
 
       {/* Like, Comment, Share and bookmark */}
       <div className="flex items-center justify-between text-xl mt-2">
-      <div className="flex items-center gap-4">
-        <BsHeartFill />
-        <motion.div 
-          onMouseEnter={() => setHovered(true)} 
-          onMouseLeave={() => setHovered(false)}
-        >
-          <IconWithCounter icon={<BsChat />} count={5} hovered={hovered} />
-        </motion.div>
-        <motion.div 
-          onMouseEnter={() => setHoveredShare(true)} 
-          onMouseLeave={() => setHoveredShare(false)}
-        >
-          <IconWithCounter icon={<BsShare />} count={10} hovered={hoveredShare} />
-        </motion.div>
+      <div className="flex items-center gap-6">
+        <div className='flex gap-1 items-center'>
+          <BsHeartFill />
+          <span className=' text-sm font-sans'>120</span>
+        </div>
+
+        <div className='flex gap-1 items-center'>
+          <BsChat />
+          <span className=' text-sm font-sans'>120</span>
+        </div>
+
+        <div className='flex gap-1 items-center'>
+          <BsShare />
+          <span className=' text-sm font-sans'>120</span>
+        </div>
       </div>
       <BsBookmark />
     </div>

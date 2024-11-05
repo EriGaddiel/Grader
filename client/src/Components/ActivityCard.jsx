@@ -12,25 +12,31 @@ function ActivityCard() {
         </div>
 
         <div className='grid justify-start gap-4'>
-            <div className='w-full flex items-center gap-4'>
-                <Avatar alt="user" rounded color="blue" size='md'/>
-                <div className='flex flex-col justify-start'>
-                    <span className='text-bold flex gap-1'>UserName <p className='text-gray-300 text'>Liked</p> </span>
-                    <span className='flex gap-1'>your photo. <p className='text-gray-300'> 5m</p></span>
+            <div className='w-full flex items-center justify-between mb-2'>
+                <div className='flex justify-between items-center gap-4'>
+                    <Avatar alt="user" rounded color="blue" size='md'/>
+                    <div className='flex flex-col justify-start'>
+                        <span className='text-bold flex gap-1'>UserName <p className='text-gray-300 text'>Liked</p> </span>
+                        <span className='flex gap-1'>your photo. <p className='text-gray-300'> 5m</p></span>
+                    </div>
                 </div>
-                <div className='pl-12'>
+
+                <div className='ml-20'>
                     <span className='text-blue-500'>
                         <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" className='rounded-md bg-black max-w-15 max-h-20 object-contain' alt="..."/>
                     </span>
                 </div>
             </div>
 
-            <div className='flex items-center gap-4'>
-                <Avatar alt="user" rounded color="blue" size='md'/>
-                <div className='flex flex-col justify-start'>
-                    <span className='text-bold flex gap-1'>UserName <p className='text-gray-300 text'>Started</p> </span>
-                    <span className='flex gap-1'>Following you. <p className='text-gray-300'> 5m</p></span>
+            <div className='flex items-center justify-between'>
+                <div className='flex gap-4'>
+                    <Avatar alt="user" rounded color="blue" size='md'/>
+                    <div className='flex flex-col justify-start'>
+                        <span className='text-bold flex gap-1'>UserName <p className='text-gray-300 text'>Started</p> </span>
+                        <span className='flex gap-1'>Following you. <p className='text-gray-300'> 5m</p></span>
+                    </div>
                 </div>
+
                 <div className='pl-10'>
                     <span className='text-blue-500'>Follow</span>
                 </div>
@@ -38,7 +44,7 @@ function ActivityCard() {
         </div>
       
     </div>
-  
+    
   )
 }
 

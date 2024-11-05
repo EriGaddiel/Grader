@@ -5,6 +5,8 @@ import dotenv from "dotenv"
 
 // Routes
 import authRoutes from '../Routes/auth.route.js'
+import postRoutes from '../Routes/postRoutes.js'
+import mediaRoutes from '../Routes/mediaRoutes.js'
 
 dotenv.config()
 
@@ -50,6 +52,8 @@ class Server{
 
     routes(){
         this.app.use('/api/auth', authRoutes)
+        this.app.use('/api/post', postRoutes)
+        this.app.use('/api/media', mediaRoutes)
     }
 
     start(){

@@ -11,7 +11,7 @@ import SugessionSection from './SugessionSection'
 import PostToastCard from '../PostToastCard'
 
 function PostSection(props) {
-  // declaration and management of all states :
+  // declaration and management of all states 
 
   let _media_files = [];
 
