@@ -44,11 +44,11 @@ function PostSection(props) {
       <div className="rounded-md flex items-center justify-between p-4 border border-gray-200">
         <div className="flex items-center gap-4">
           <Avatar img={Logo} alt="user" rounded bordered color="blue" size='md'/>
-          <span className='sm:text-sm'> What's on your mind <b className='text-blue-500'>Username</b></span>
+          <span className='text-sm'> What's on your mind <b className='text-blue-500'>Username</b></span>
         </div>
 
-        <button className='bg-blue-500 w-[10rem] p-2 flex items-center justify-center gap-2 text-white rounded-md hidden md:flex' onClick={() => setOpenModal(true)}>
-          <BsPen/>
+        <button className='bg-blue-500 w-[5rem] md:w-[10rem] p-2 flex items-center justify-center gap-2 text-white rounded-md' onClick={() => setOpenModal(true)}>
+          <BsPen className='hidden md:inline'/>
           Post
         </button>
       </div>

@@ -59,10 +59,9 @@ function PostCards() {
           <Avatar img={Logo} alt="user" rounded stacked/>
           <Avatar img={Logo} alt="user" rounded stacked/>
           <Avatar  alt="user" rounded stacked/>
-          {/* <Avatar img={Logo} alt="user" rounded stacked/> */}
           <Avatar.Counter total={99} />
         </Avatar.Group>
-        <p className='sm: text-sm'>Liked by <b>Username</b> and <b>1,339 others</b></p>
+        <p className='text-[12px] md:text-sm'>Liked by <b>Username</b> and <b>1,339 others</b></p>
       </div>
 
       {/* post Caption */}

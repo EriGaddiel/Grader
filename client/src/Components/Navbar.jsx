@@ -22,7 +22,7 @@ function NavBar() {
   ]
 
   return (
-    <Navbar className='border-b-2 p-1' fluid>
+    <Navbar className='border-b-2 p-2' fluid>
 
       {/* Logo */}
       <Navbar.Brand>
